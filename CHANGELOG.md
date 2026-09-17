@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.2.0 - 2026-09-17
+#### Features
+- transport interprets config - (a028803) - Nathan Blair
+
+- - -
+
 ## 0.1.1 - 2026-09-17
 #### Bug Fixes
 - replace connect-testing with generic testing module - (d0d4496) - Nathan Blair
