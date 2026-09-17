@@ -4,5 +4,5 @@ go 1.27.1
 
 require (
 	github.com/cenkalti/backoff/v7 v7.0.0
-	github.com/pbrpc/connect-testing v0.3.1
+	github.com/pbrpc/testing v0.1.0
 )

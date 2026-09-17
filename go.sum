@@ -1,4 +1,4 @@
 github.com/cenkalti/backoff/v7 v7.0.0 h1:ZP+QAaaOnVUHo+ufFpZ835hbT3x2fy+h2lecVEosZ6A=
 github.com/cenkalti/backoff/v7 v7.0.0/go.mod h1:qcKBGwsu4hpxHtQ8tWYsQ+ifzx2+sS+Xx/3jfe30lI8=
-github.com/pbrpc/connect-testing v0.3.1 h1:Arb+P3iH+Qp49AcAoG0OZIYokPyZzNtS/of+h+GwZJA=
-github.com/pbrpc/connect-testing v0.3.1/go.mod h1:bujCENzxoogpSgKh//RLG0f5nWTQpiT4GrheaFYJ340=
+github.com/pbrpc/testing v0.1.0 h1:7fl2s7qr7R6KB56P0S2ETyeIw0Bb75NRkxzZjCYkxfc=
+github.com/pbrpc/testing v0.1.0/go.mod h1:tFmgwgaDti1Wx8ELoKxRmPI0GZQ2GhFnl0vqBWsU6yU=
