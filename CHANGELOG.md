@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.3.0 - 2026-09-18
+#### Features
+- don't default transport if base is nil - (b60e63e) - Nathan Blair
+#### Documentation
+- update readiness code documentation - (5a28af3) - Nathan Blair
+
+- - -
+
 ## 0.2.0 - 2026-09-17
 #### Features
 - transport interprets config - (a028803) - Nathan Blair
