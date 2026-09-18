@@ -2,6 +2,7 @@
 package transport
 
 import (
+	"errors"
 	"net/http"
 	"testing"
 	"time"
@@ -11,15 +12,14 @@ import (
 )
 
 func TestTransportWithReadiness(t *testing.T) {
-	t.Run("substitutes the standard transport, system clock, and exponential schedule", func(t *testing.T) {
-		transport, ok := WithReadiness(nil, nil, nil).(*readyTransport)
+	t.Run("substitutes the system clock and exponential schedule", func(t *testing.T) {
+		base := roundtripper.Fail(errors.New("unexpected request"))
+
+		transport, ok := WithReadiness(base, nil, nil).(*readyTransport)
 		if !ok {
 			t.Fatal("expected a readyTransport")
 		}
 
-		if transport.base != http.DefaultTransport {
-			t.Errorf("base = %T, want http.DefaultTransport", transport.base)
-		}
 		if _, ok := transport.clock.(systemClock); !ok {
 			t.Errorf("clock = %T, want the system clock", transport.clock)
 		}

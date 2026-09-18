@@ -36,18 +36,14 @@ type readyTransport struct {
 	hosts map[string]*hostState
 }
 
-// WithReadiness wraps base with pacing. base nil means the standard transport,
-// clock nil means the system clock; newBackOff nil means the backoff library's
-// exponential schedule with its defaults.
+// WithReadiness wraps base with pacing. clock nil means the system clock;
+// newBackOff nil means the backoff library's exponential schedule with its
+// defaults.
 func WithReadiness(
 	base http.RoundTripper,
 	clock Clock,
 	newBackOff BackOffFactory,
 ) http.RoundTripper {
-	if base == nil {
-		base = http.DefaultTransport
-	}
-
 	if clock == nil {
 		clock = systemClock{}
 	}
